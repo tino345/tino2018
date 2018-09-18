@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The network</title>
+    </head>
+<body style="background-color:powderblue;">
+<a href="page2.html" target="_blank">bio</a> 
+<article>
+  <header>
+    <h1><font color="fffff"><center>This is my website</center></font></h1>
+    <h3><font color="fffff">This is some text!</font></h3>
+    <p><font color="fffff">This is some text!</font>.</p>
+  </header>
+  <p><font color="fffff">This is some text!</font></p>
+</article>
+<a href="https://www.youtube.com/watch?v=SLNLaY2rU78" target="_blank">350z drift</a> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<h2>Center an Image</h2>
+<img src="images/drift.jpg" alt="Drifts" style="width:50%;">
+
+</body>
+</html>
