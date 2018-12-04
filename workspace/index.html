@@ -96,6 +96,13 @@ body, html {
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>Welcome to my website. This is where i show off my best and most recent work. I do photo shoots for any and all events.</p>
+      <html>
+<body>
+<p><a href="https://scratch.mit.edu/projects/249821280/#player">Visit my game</a></p>
+
+</body>
+</html>
+
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
@@ -155,7 +162,7 @@ body, html {
     </div>
 
  <div class="w3-col m3">
-      <img src="images/bluff.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stars">
+      <img src="images/stars.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stars">
     </div>
     
     <div class="w3-col m3">
@@ -163,7 +170,7 @@ body, html {
     </div>
     
     <div class="w3-col m3">
-      <img src="images/photo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="red rider">
+      <img src="images/stars.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="red rider">
     </div>
     
 <div class="w3-col m3">
@@ -173,7 +180,6 @@ body, html {
     <div class="w3-col m3">
       <img src="images/truck1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="night view">
     </div>
-    
     <div class="w3-col m3">
       <img src="images/rose.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rose">
     </div>
@@ -261,7 +267,49 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">me</a></p>
 </footer>
  
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+ 
 
+ 
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
 </body>
 </html>
